@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio Rasyida Nur — Mahasiswa Pendidikan Teknologi Informasi" />
+  <title>Rasyida Nur — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cur"></div>
+  <div class="cursor-ring" id="ring"></div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about"    onclick="closeMobile()">Tentang</a>
+    <a href="#skills"   onclick="closeMobile()">Keahlian</a>
+    <a href="#projects" onclick="closeMobile()">Proyek</a>
+    <a href="#contact"  onclick="closeMobile()">Kontak</a>
+  </div>
+
+  <!-- ══ NAV ══ -->
+  <nav id="nav">
+    <div class="nav-name">Rasyida Nur</div>
+    <div class="nav-links">
+      <a href="#about">Tentang</a>
+      <a href="#skills">Keahlian</a>
+      <a href="#projects">Proyek</a>
+      <a href="#contact">Kontak</a>
+    </div>
+    <div class="hamburger" id="ham" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Halo, perkenalkan saya</div>
+      <h1 class="hero-name">Rasyida <em>Nur</em></h1>
+      <p class="hero-sub">Mahasiswa Pendidikan Teknologi Informasi</p>
+      <p class="hero-desc">
+        Antusias belajar dan berkembang di dunia teknologi, desain, dan kreativitas digital untuk menciptakan sesuatu yang bermakna.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-gold">
+          Lihat Proyek
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="13"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+        <a href="#contact" class="btn-outline">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <!-- Taruh foto kamu di assets/profile.jpg -->
+      <img id="heroImg" src="/portfolio-html/assets/img.JPG" alt="Rasyida Nur" />
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <section id="about">
+    <div class="about-inner reveal">
+      <div class="s-label">Tentang Saya</div>
+      <h2 class="s-title">Seorang <em>mahasiswa</em> yang suka dunia digital</h2>
+      <div class="orn"><div class="orn-line"></div><div class="orn-d"></div><div class="orn-line"></div></div>
+      <div class="about-bio">
+        <p>Saya adalah mahasiswa Pendidikan Teknologi Informasi di Universitas Cahaya Prima yang passionate dalam dunia teknologi dan kreasi digital. Saya percaya bahwa teknologi bisa menjadi jembatan antara edukasi dan inovasi.</p>
+        <p>Walaupun kemampuan saya masih terus berkembang, saya menikmati proses belajar mulai dari desain visual, pengembangan web sederhana, hingga eksplorasi animasi dan 3D.</p>
+        <p>Bagi saya, teknologi bukan hanya tentang coding, tetapi juga tentang bagaimana sebuah ide bisa diwujudkan menjadi sesuatu yang menarik dan bermakna.</p>
+      </div>
+      <a href="https://drive.google.com/file/d/1dvYo8nu0KkGCtKiwMhTf8JGkucCBBMYS/view?usp=drive_link" class="btn-outline" target="_blank">
+        Unduh CV
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="11"><path d="M8 3v8M4 9l4 4 4-4"/><path d="M2 14h12"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ══ SKILLS ══ -->
+  <section id="skills">
+    <div class="skills-intro reveal">
+      <div class="s-label">Keahlian</div>
+      <h2 class="s-title">Creative<em>Toolkit ✨</em></h2>
+      <div class="orn"><div class="orn-line"></div><div class="orn-d"></div><div class="orn-line"></div></div>
+      <p>Saya terus belajar dan mengeksplorasi berbagai hal di dunia digital, mulai dari desain visual hingga pengembangan kreatif.</p>
+    </div>
+
+    <div class="skill-groups reveal">
+
+      <!-- Design & Visual -->
+      <div>
+        <div class="skill-group-title">Design &amp; Kreasi Visual</div>
+        <div class="skill-icons">
+          <div class="skill-icon-card">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="8" fill="#7D2AE8"/>
+              <text x="20" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="bold" fill="white">C</text>
+            </svg>
+            <span class="skill-icon-name">Canva</span>
+          </div>
+          <div class="skill-icon-card">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="4" fill="#001E36"/>
+              <text x="20" y="27" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#31A8FF">Ps</text>
+            </svg>
+            <span class="skill-icon-name">Photoshop</span>
+          </div>
+          <div class="skill-icon-card">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="8" fill="#1a1a1a"/>
+              <circle cx="20" cy="22" r="9" fill="none" stroke="#EA7600" stroke-width="2.5"/>
+              <circle cx="20" cy="22" r="4" fill="#EA7600"/>
+              <rect x="18" y="8" width="4" height="8" rx="2" fill="#EA7600"/>
+              <circle cx="28" cy="14" r="3" fill="#EA7600"/>
+            </svg>
+            <span class="skill-icon-name">Blender 3D</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Development -->
+      <div>
+        <div class="skill-group-title">Web Development</div>
+        <div class="skill-icons">
+          <div class="skill-icon-card">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="4" fill="#E34F26"/>
+              <text x="20" y="27" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="white">HTML5</text>
+            </svg>
+            <span class="skill-icon-name">HTML5</span>
+          </div>
+          <div class="skill-icon-card">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="4" fill="#1572B6"/>
+              <text x="20" y="27" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="white">CSS3</text>
+            </svg>
+            <span class="skill-icon-name">CSS3</span>
+          </div>
+          <div class="skill-icon-card">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="8" fill="#1a1a2e"/>
+              <path d="M20 8c-4.4 0-7 1.8-7 4.5v2.5h7v1H10.5C8 16 6 18 6 21s2 5 4.5 5H13v-3c0-2.5 2-4.5 4.5-4.5h5c2.5 0 4.5-2 4.5-4.5v-4C27 10 23.8 8 20 8zm-2.5 3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z" fill="#3776AB"/>
+              <path d="M20 32c4.4 0 7-1.8 7-4.5v-2.5h-7v-1h9.5c2.5 0 4.5-2 4.5-5s-2-5-4.5-5H27v3c0 2.5-2 4.5-4.5 4.5h-5c-2.5 0-4.5 2-4.5 4.5v4C13 30 16.2 32 20 32zm2.5-3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="#FFD43B"/>
+            </svg>
+            <span class="skill-icon-name">Python</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Multimedia -->
+      <div>
+        <div class="skill-group-title">Multimedia &amp; Animasi</div>
+        <div class="skill-icons">
+          <div class="skill-icon-card">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="4" fill="#1a1a1a"/>
+              <text x="20" y="27" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#FF0000">An</text>
+            </svg>
+            <span class="skill-icon-name">Adobe Animate</span>
+          </div>
+          <div class="skill-icon-card">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="10" fill="#000"/>
+              <text x="20" y="24" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">Cap</text>
+              <text x="20" y="34" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">Cut</text>
+            </svg>
+            <span class="skill-icon-name">CapCut</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Tools Tags -->
+    <div class="tags reveal">
+      <span class="tag">GitHub</span>
+      <span class="tag">VS Code</span>
+      <span class="tag">AI Tools</span>
+      <span class="tag">Microsoft Office</span>
+      <span class="tag">Google Workspace</span>
+      <span class="tag">Figma</span>
+    </div>
+  </section>
+
+  <!-- ══ PROJECTS ══ -->
+  <section id="projects">
+    <div class="s-label reveal">Portofolio</div>
+    <h2 class="s-title reveal">Proyek <em>pilihan</em></h2>
+    <div class="orn reveal"><div class="orn-line"></div><div class="orn-d"></div><div class="orn-line"></div></div>
+
+    <div class="proj-grid">
+
+      <!-- Proyek 1 -->
+      <div class="proj-card reveal">
+        <div class="proj-img">
+          <img src="/portfolio-html/assets/Expense Tracker.png" alt="Expense Tracker Web"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="proj-img-fallback" style="display:none;">₿</div>
+          <div class="proj-img-overlay"></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-num">001</div>
+          <h3 class="proj-title">Expense Tracker Web</h3>
+          <p class="proj-desc">Aplikasi web untuk mengatur keuangan harian dengan mudah. Catat pemasukan dan pengeluaran, lihat ringkasan dalam grafik, dan pantau saldo secara praktis.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">HTML5</span>
+            <span class="proj-tag">CSS3</span>
+            <span class="proj-tag">JavaScript</span>
+            <span class="proj-tag">Python</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/Marsmaru/Kalkulator-Biaya-Pengeluaran-Expense-Tracker-" class="proj-link" target="_blank">
+              <svg viewBox="0 0 16 16" fill="currentColor" width="12"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+              GitHub
+            </a>
+            <a href="https://marsmaru.github.io/Kalkulator-Biaya-Pengeluaran-Expense-Tracker-/" class="proj-link" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="11"><path d="M7 2H2v12h12V9M9 2h5v5M14 2L7 9"/></svg>
+              Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyek 2 -->
+      <div class="proj-card reveal">
+        <div class="proj-img">
+          <img src="/portfolio-html/assets/Coin Rush Game.png" alt="Flash8 Coin Rush"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="proj-img-fallback" style="display:none;">🎮</div>
+          <div class="proj-img-overlay"></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-num">002</div>
+          <h3 class="proj-title">Flash8 Coin Rush</h3>
+          <p class="proj-desc">Game sederhana berbasis Flash yang menggabungkan elemen permainan dan kreativitas visual. Sebuah eksplorasi seru di dunia animasi interaktif.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Adobe Flash</span>
+            <span class="proj-tag">ActionScript</span>
+            <span class="proj-tag">Game Dev</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/Marsmaru/flash8_coin_rush" class="proj-link" target="_blank">
+              <svg viewBox="0 0 16 16" fill="currentColor" width="12"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+              GitHub
+            </a>
+            <a href="https://marsmaru.github.io/flash8_coin_rush/" class="proj-link" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="11"><path d="M7 2H2v12h12V9M9 2h5v5M14 2L7 9"/></svg>
+              Play Game
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyek 3 -->
+      <div class="proj-card reveal">
+        <div class="proj-img">
+          <img src="/portfolio-html/assets/Capcut.jpeg" alt="CapCut Template Collection"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="proj-img-fallback" style="display:none;">✂</div>
+          <div class="proj-img-overlay"></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-num">003</div>
+          <h3 class="proj-title">CapCut Template Collection</h3>
+          <p class="proj-desc">Kumpulan template editing foto dan video menggunakan CapCut dan AI tools — template estetik, transisi video, dan edit cepat untuk konten media sosial.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">CapCut</span>
+            <span class="proj-tag">AI Tools</span>
+            <span class="proj-tag">Content Creation</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://mobile.capcutshare.com/sv2/ZS9U4FHHy/" class="proj-link" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="11"><path d="M7 2H2v12h12V9M9 2h5v5M14 2L7 9"/></svg>
+              Preview Template
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section id="contact">
+    <div class="s-label reveal">Kontak</div>
+    <h2 class="s-title reveal">Stay <em>Connected</em></h2>
+    <div class="orn reveal"><div class="orn-line"></div><div class="orn-d"></div><div class="orn-line"></div></div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <p style="font-size:.9rem;color:var(--dim);line-height:1.95;margin-bottom:2.5rem;">
+          Senang bisa berbagi sedikit tentang diri dan karya saya di sini.
+Feel free to reach out kapan pun.
+        </p>
+        <div class="contact-info">
+          <div class="c-item">
+            <div class="c-icon">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="15"><path d="M2 4l6 5 6-5M2 4h12v9H2V4z"/></svg>
+            </div>
+            <div>
+              <div class="c-label">Email</div>
+              <div class="c-val">rasyidanur1714@gmail.com</div>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="15"><path d="M8 1.5A4.5 4.5 0 0 1 12.5 6c0 3.5-4.5 8.5-4.5 8.5S3.5 9.5 3.5 6A4.5 4.5 0 0 1 8 1.5z"/><circle cx="8" cy="6" r="1.5"/></svg>
+            </div>
+            <div>
+              <div class="c-label">Lokasi</div>
+              <div class="c-val">Sulawesi Selatan, Indonesia</div>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="15"><circle cx="8" cy="8" r="6.5"/><path d="M8 4v4l2.5 1.5"/></svg>
+            </div>
+            <div>
+              <div class="c-label">Status</div>
+              <div class="c-val" style="color:var(--gold-lt);">● Tersedia untuk kolaborasi</div>
+            </div>
+          </div>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/Marsmaru" class="social" target="_blank" title="GitHub">
+            <svg viewBox="0 0 16 16" fill="currentColor" width="15"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/rasyida-nur/" class="social" target="_blank" title="LinkedIn">
+            <svg viewBox="0 0 16 16" fill="currentColor" width="15"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/marsssu_/" class="social" target="_blank" title="Instagram">
+            <svg viewBox="0 0 16 16" fill="currentColor" width="15"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@marsssu_" class="social" target="_blank" title="TikTok">
+            <svg viewBox="0 0 16 16" fill="currentColor" width="15"><path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <div class="form-group">
+          <label>Nama Lengkap</label>
+          <input type="text" id="fName" placeholder="John Doe" />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="fEmail" placeholder="john@example.com" />
+        </div>
+        <div class="form-group">
+          <label>Subjek</label>
+          <input type="text" id="fSubject" placeholder="Kolaborasi Proyek" />
+        </div>
+        <div class="form-group">
+          <label>Pesan</label>
+          <textarea id="fMsg" placeholder="Ceritakan tentang proyek atau idenya..."></textarea>
+        </div>
+        <button class="btn-gold" onclick="sendForm()">
+          Kirim Pesan
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="13"><path d="M1 8h13M9 4l5 4-5 4"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <p>© 2026 Rasyida Nur — Made with HTML, CSS &amp; JavaScript</p>
+    <p>Universitas Cahaya Prima · Sulawesi Selatan</p>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
